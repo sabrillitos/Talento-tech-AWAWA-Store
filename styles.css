@@ -217,7 +217,7 @@ main{
 
 /*---------------------------------------- MEDIA QUERY ------------------------------------------*/
 
-@media (max-width:800px) and (min-width:500px){
+@media (max-width:800px) and (min-width:200px){
     .review-grid {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -225,14 +225,14 @@ main{
 } 
 
 
-@media (max-width:800px) and (min-width:500px){
+@media (max-width:800px) and (min-width:200px){
     .form-container{
         flex-direction: column; 
         font-size: 1em;
     }
 }
 
-@media (max-width:800px) and (min-width:500px){
+@media (max-width:800px) and (min-width:200px){
     .carousel-caption{
         font-size: 1.3em;
     }
