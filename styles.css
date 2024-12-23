@@ -11,6 +11,10 @@ body, html{
     font-family: 'Spline Sans';
 }
 
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
 main{
     margin: auto;
     width: 80vw;
@@ -81,7 +85,7 @@ main{
     box-shadow: 0 0 5px#00000063;
 }
 
-.review-header{
+.review-header, .cart-header{
     text-align: center;
     text-transform: uppercase;
     background-color: #ddda;
@@ -116,7 +120,7 @@ main{
     margin-top: 0.5em;
 }
 
-.products{
+.products-container{
     margin: 3em 0;
 }
 
@@ -133,32 +137,32 @@ main{
     font-size: 1.5em
 }
 
-.delete-button{
+.delete-button, .clean-button{
     background-color: #392467;
     border: none;
 }
 
-.delete-button:hover{
+.delete-button:hover, .clean-button:hover{
     background-color: #6d518b;
     border: none;
 }
 
-.delete-button:active{
+.delete-button:active, .clean-button:active{
     background-color: #A367B1 !important;
     border: none;
 }
 
-.add-button{
+.add-button, .buy-button{
     background-color: #a37ab6; 
     border: none;
 }
 
-.add-button:hover{
+.add-button:hover, .buy-button:hover{
     background-color: #9e5abd9b;
     border: none;
 }
 
-.add-button:active{
+.add-button:active, .buy-button:active{
     background-color: #A367B1 !important; 
     border: none;
 }
@@ -234,9 +238,10 @@ main{
 
 @media (max-width:800px) and (min-width:200px){
     .carousel-caption{
-        font-size: 1.3em;
+        font-size: 1em;
     }
 }
+
 
 /* --------------------------------------- FORM STYLES ---------------------------------------- */
 
@@ -314,4 +319,28 @@ textarea{
     border-bottom: 2px solid #504d5055;
     border-radius: 7px;
     font-size: 0.6em;
+}
+
+
+/*---------------------------------------- CART STYLES ------------------------------------------*/
+
+.cart-container{
+    margin: 3em 0;
+}
+
+.cart-header{
+    margin-top: 4.3em;
+}
+
+.buy-button, .clean-button{
+    margin-bottom: 2.6em;
+}
+
+th{
+    background-color: #a37ab6 !important;
+    color: #fff !important;
+}
+
+table{
+    box-shadow: 0 0 5px#00000063;
 }
